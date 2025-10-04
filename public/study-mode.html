@@ -115,7 +115,7 @@
                 quizLinkEl.href = `/quiz?week=${currentWeek}`;
 
                 // Muat data SRS dari localStorage
-                srsData = JSON.parse(localStorage.getItem('Kanji-review-srs')) || {};
+                srsData = JSON.parse(localStorage.getItem('kanjiSRSData')) || {};
 
                 try {
                     // Ambil data kanji untuk minggu ini

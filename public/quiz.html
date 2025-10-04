@@ -168,9 +168,9 @@
             }
 
             function saveProgress() {
-                const progress = JSON.parse(localStorage.getItem('Progress-n2')) || {};
+                const progress = JSON.parse(localStorage.getItem('Kanjirogress-n2')) || {};
                 progress[currentWeek] = true;
-                localStorage.setItem('Progress-n2', JSON.stringify(progress));
+                localStorage.setItem('Kanjiprogress-n2', JSON.stringify(progress));
             }
 
             init();

@@ -69,7 +69,7 @@
             let totalKanji = 0;
 
             // Ambil data progress dari localStorage
-            const progress = JSON.parse(localStorage.getItem('Progress-n2')) || {};
+            const progress = JSON.parse(localStorage.getItem('kanjiSRSData')) || {};
 
             function updateStats() {
                 const completedWeeksCount = Object.values(progress).filter(Boolean).length;
@@ -124,7 +124,7 @@
 
             resetProgressBtn.addEventListener('click', () => {
                 if (confirm('Apakah Anda yakin ingin menghapus semua progress belajar?')) {
-                    localStorage.removeItem('Progress-n2');
+                    localStorage.removeItem('kanjiSRSData');
                     location.reload();
                 }
             });

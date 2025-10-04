@@ -66,7 +66,7 @@
             const schedulePlaceholder = document.getElementById('schedule-placeholder');
 
             // 1. Muat data SRS dari localStorage
-            const srsData = JSON.parse(localStorage.getItem('kanji-review-srs')) || {};
+            const srsData = JSON.parse(localStorage.getItem('kanjiSRSData')) || {};
 
             // Jika tidak ada data sama sekali, hentikan eksekusi
             if (Object.keys(srsData).length === 0) {
