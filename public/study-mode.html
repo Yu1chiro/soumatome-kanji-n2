@@ -82,7 +82,7 @@
         </div>
     </div>
 
-    <script>
+   <script>
         document.addEventListener('DOMContentLoaded', () => {
             // Elemen UI
             const loadingEl = document.getElementById('loading');
@@ -178,7 +178,7 @@
                 progressTextEl.textContent = 'Sesi Belajar Selesai';
                 sessionCompleteEl.classList.remove('hidden');
                 // Simpan semua perubahan data SRS
-                localStorage.setItem('Kanji-review-srs', JSON.stringify(srsData));
+                localStorage.setItem('kanjiSRSData', JSON.stringify(srsData));
             }
 
             // Event Listeners
